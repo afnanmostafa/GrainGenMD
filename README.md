@@ -7,9 +7,10 @@
 ## Features
 - **Grain File Generation**: Create Atomsk-compatible grain files for polycrystalline structures.
 - **Geometric Filtering**: Filter atoms within or outside custom geometric shapes (e.g., ellipsoids, circles).
-- **Visualization**: Visualize grain distributions.
+- **Merge Structures**: Merges multiple (e.g., bulk single crystal + poly ellipsoidal region) regions.
+- **Visualization**: Visualize grain distributions/nodes.
 - **Compatibility**: Seamlessly integrates with Atomsk and LAMMPS for pre- and post-processing of atomic structures.
-- **Flexible Inputs**: Supports customizable lattice parameters, orientations, grain types, and box dimensions.
+- **Flexible Inputs**: Supports customizable lattice type, lattice parameters, orientations, grain types, and box dimensions.
 
 ---
 
@@ -32,5 +33,9 @@ Clone the repository:
 ```bash
 git clone https://github.com/your-username/GrainGenMD.git
 cd GrainGenMD
-
-contact at afnanmostafa102@gmail.com for queries/prs.
+```
+Run the script:
+```bash
+bash main.bash
+```
+contact at afnanmostafa102@gmail.com for queries.

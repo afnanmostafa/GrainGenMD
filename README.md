@@ -1,16 +1,16 @@
 # GrainGenMD
 
-**GrainGenMD** is a collection of tools for generating, processing, and visualizing polycrystalline structures for molecular dynamics (MD) simulations. The repository provides streamlined scripts for tasks such as creating grain boundary configurations, filtering atomic data using geometric constraints, and then preparing LAMMPS-compatible input files.
+**GrainGenMD** is a versatile toolkit designed to assist researchers in generating, processing, and visualizing polycrystalline structures for molecular dynamics (MD) simulations. This repository provides scripts to create grain configurations, filter atomic data, and prepare simulation-ready input files compatible with tools like Atomsk and LAMMPS.
 
 ---
 
 ## Features
-- **Grain File Generation**: Create Atomsk-compatible grain files for polycrystalline structures.
-- **Geometric Filtering**: Filter atoms within or outside custom geometric shapes (e.g., ellipsoids, circles).
-- **Merge Structures**: Merges multiple (e.g., bulk single crystal + poly ellipsoidal region) regions.
-- **Visualization**: Visualize grain distributions/nodes.
-- **Compatibility**: Seamlessly integrates with Atomsk and LAMMPS for pre- and post-processing of atomic structures.
-- **Flexible Inputs**: Supports customizable lattice type, lattice parameters, orientations, grain types, and box dimensions.
+- **Grain Generation**: Generate Atomsk-compatible grain structures for polycrystalline systems.
+- **Geometric Filtering**: Filter atoms within or outside user-defined geometric regions (e.g., ellipsoids).
+- **Structure Merging**: Combine bulk and polycrystalline regions for MD simulations.
+- **Visualization**: Create 2D/3D visualizations of grain distributions and atomic positions.
+- **Flexible Inputs**: Customizable lattice type, lattice parameters, orientations, grain configurations, and box dimensions.
+- **Simulation Compatibility**: Generate `.xsf` and `.data` files for Atomsk and LAMMPS.
 
 ---
 
@@ -36,11 +36,21 @@ cd GrainGenMD
 ```
 Run the script:
 ```bash
+cd ./src/
 bash main.bash
 ```
-View the file:
+View the generated LAMMPS-compatible input file:
 ```bash
 cd ./<new_directory_will_be_generated> 
 less final_<some_random_number>.data
 ```
+---
+
+## Sample File:
+
+Below is an example of a 3D grain distribution generated using the tool:
+
+![Grain Distribution](assets/ND-grains.png)
+
+
 contact at afnanmostafa102@gmail.com for queries.

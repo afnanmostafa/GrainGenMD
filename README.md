@@ -38,4 +38,9 @@ Run the script:
 ```bash
 bash main.bash
 ```
+View the file:
+```bash
+cd ./<new_directory_will_be_generated> 
+less final_<some_random_number>.data
+```
 contact at afnanmostafa102@gmail.com for queries.

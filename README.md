@@ -31,7 +31,7 @@
 ### Installation
 Clone the repository:
 ```bash
-git clone https://github.com/your-username/GrainGenMD.git
+git clone https://github.com/afnanmostafa/GrainGenMD.git
 cd GrainGenMD
 ```
 Run the script:
